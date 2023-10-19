@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "a3a22bab63d826c73da9086cd59f3f6eeb0fa422b34ddf63b6ac0b6766afe13a"
+            "sha256": "0d2aaed7e8af5c59e96893c16a9a555b7243a4bbd06283d498f53c846eb14efb"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -57,6 +57,7 @@
                 "sha256:fbdaec13c5105f0c4e5c52614d04f0bca5f5af007910daa8b6b12095edaa67b3"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.6'",
             "version": "==4.0.1"
         },
         "click": {
@@ -66,6 +67,14 @@
             ],
             "markers": "python_version >= '3.7'",
             "version": "==8.1.7"
+        },
+        "config": {
+            "hashes": [
+                "sha256:2dd4a03aa383d30711d5a3325a1858de225328d61950a85be5b74c100f63016d",
+                "sha256:79ffa009ff2663cc8ca29e56bcec031c044609d4bafaa4f884132a413101ce84"
+            ],
+            "index": "pypi",
+            "version": "==0.5.1"
         },
         "dnspython": {
             "hashes": [
@@ -96,6 +105,7 @@
                 "sha256:9c44de45693ae037b0c6914727a29c49a40668432b67c859a87851fc6a7b74c6"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.8'",
             "version": "==0.104.0"
         },
         "greenlet": {
@@ -206,7 +216,7 @@
                 "sha256:94f336138093a5d7f426aac732dcfe7ab4eb4da243c88f891d65deb4a2556ee7",
                 "sha256:bc3ddf669d234f4220e6e1c4d96b061abe0998185a8d7855c0126782b7abc8c1"
             ],
-            "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==2.4.2"
         },
         "pydantic-core": {
@@ -335,6 +345,7 @@
                 "sha256:ee698bab5ef148b0a760751c261902cd096e57e10558e11aca17646b74ee1c18"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==0.0.6"
         },
         "rsa": {
@@ -414,6 +425,7 @@
                 "sha256:f776c2c30f0e5f4db45c3ee11a5f2a8d9de68e81eb73ec4237de1e32e04ae81c"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.7'",
             "version": "==2.0.22"
         },
         "starlette": {
@@ -438,6 +450,7 @@
                 "sha256:4d3cc12d7727ba72b64d12d3cc7743124074c0a69f7b201512fc50c3e3f1569a"
             ],
             "index": "pypi",
+            "markers": "python_version >= '3.8'",
             "version": "==0.23.2"
         }
     },

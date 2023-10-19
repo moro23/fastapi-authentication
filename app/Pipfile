@@ -12,6 +12,7 @@ bcrypt = "*"
 python-jose = "*"
 python-multipart = "*"
 pydantic = {extras = ["email"], version = "*"}
+config = "*"
 
 [dev-packages]
 

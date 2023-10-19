@@ -27,14 +27,6 @@ class Login(BaseModel):
     class Config():
         orm_mode = True
 
-class Token(BaseModel):
-    access_token: str
-    token_type: str
-
-
-class TokenData(BaseModel):
-    username: str | None = None
-
 class LoginResponse(BaseModel):
     access_token: str
     refresh_token: str
@@ -43,6 +35,25 @@ class LoginResponse(BaseModel):
 
     class Config:
         orm_mode = True
+
+class Logout(BaseModel):
+    access_token: str
+    refresh_token: str
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+class AccessToken(BaseModel):
+    access_token: str
+
+class RefreshToken(BaseModel):
+    refresh_token: str
 
 class TokenCreate(BaseModel):
     access_token: Optional[str]

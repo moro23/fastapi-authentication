@@ -1,7 +1,6 @@
-from fastapi import Request, HTTPException, Depends
-from jwt.exceptions import ExpiredSignatureError
-from exceptions import BlacklistedToken
-from database import SessionLocal
+from fastapi import HTTPException, Depends
+from .exceptions import BlacklistedToken
+from core.database import SessionLocal
 from email.generator import Generator 
 from jose import JWTError, jwt
 
