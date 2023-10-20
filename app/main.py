@@ -102,11 +102,9 @@ class EmailVerificationCode():
 ## creating an instance of FastAPI
 app = FastAPI()
 
-# router = APIRouter(
-#     tags=['Login']
-# )
 
 
+## api-endpoints for our user registration route
 @app.post('/', response_model=ShowUser, name="Sign Up", tags=['User Registration'])
 def createUser(request: CreateUser, db: Session = Depends(database.get_db)):
     """
@@ -173,7 +171,7 @@ async def revoke_token(payload:Union[Logout, str], db:Session):
     except Exception as e: 
         print(e) 
 
-## api route for user authentication
+## ## api-endpoints for our user authentication route
 
 @app.post('/login', response_model=LoginResponse, name='Login', tags=["User Authentication"])
 async def authenticate(payload:Login, db:Session=Depends(database.get_db)):
